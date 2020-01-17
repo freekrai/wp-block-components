@@ -6,13 +6,8 @@ const CoreHtmlBlock = props => {
 		content,
 	} = props.attributes;
 
-	const styles = {};
-	const classes = ['core-block-paragraph'];
-
 	return (
-		<p
-			className={classes.join(' ')}
-			style={styles}
+		<div
 			dangerouslySetInnerHTML={{
 				__html: content,
 			}}

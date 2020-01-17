@@ -39,7 +39,8 @@ const CoreBlock = props => {
 	if (__typename.endsWith('CoreParagraphBlock')) {
 		return <CoreParagraphBlock attributes={attributes} />;
 	}
-
+	// if no defined block, then default to Paragraph block.
+//	return return <CoreParagraphBlock attributes={attributes} />;
 	return null;
 };
 
