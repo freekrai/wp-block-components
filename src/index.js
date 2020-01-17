@@ -4,6 +4,7 @@ import CoreHeadingBlock from './components/CoreHeadingBlock/CoreHeadingBlock';
 import CoreImageBlock from './components/CoreImageBlock/CoreImageBlock';
 import CoreListBlock from './components/CoreListBlock/CoreListBlock';
 import CoreParagraphBlock from './components/CoreParagraphBlock/CoreParagraphBlock';
+import CoreQuoteBlock from './components/CoreQuoteBlock/CoreQuoteBlock';
 
 export {
 	CoreBlock,
@@ -12,4 +13,5 @@ export {
 	CoreImageBlock,
 	CoreListBlock,
 	CoreParagraphBlock,
+	CoreQuoteBlock,
 };
