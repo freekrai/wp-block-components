@@ -6,12 +6,22 @@ import CoreHeadingBlock from '../CoreHeadingBlock/CoreHeadingBlock';
 import CoreImageBlock from '../CoreImageBlock/CoreImageBlock';
 import CoreListBlock from '../CoreListBlock/CoreListBlock';
 import CoreParagraphBlock from '../CoreParagraphBlock/CoreParagraphBlock';
+import CoreQuoteBlock from '../CoreQuoteBlock/CoreQuoteBlock';
+import CoreHtmlBlock from '../CoreHtmlBlock/CoreHtmlBlock';
 
 const CoreBlock = props => {
 	const { __typename, attributes } = props.block;
 
 	if (__typename.endsWith('CoreCodeBlock')) {
 		return <CoreCodeBlock attributes={attributes} />;
+	}
+
+	if (__typename.endsWith('CoreQuoteBlock')) {
+		return <CoreQuoteBlock attributes={attributes} />;
+	}
+
+	if (__typename.endsWith('CoreHtmlBlock')) {
+		return <CoreHtmlBlock attributes={attributes} />;
 	}
 
 	if (__typename.endsWith('CoreHeadingBlock')) {
