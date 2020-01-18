@@ -6,6 +6,7 @@ import CoreListBlock from './components/CoreListBlock/CoreListBlock';
 import CoreParagraphBlock from './components/CoreParagraphBlock/CoreParagraphBlock';
 import CoreQuoteBlock from './components/CoreQuoteBlock/CoreQuoteBlock';
 import CoreHtmlBlock from './components/CoreHtmlBlock/CoreHtmlBlock';
+import CoreButtonBlock from './components/CoreButtonBlock/CoreButtonBlock';
 
 export {
 	CoreBlock,
@@ -15,5 +16,6 @@ export {
 	CoreListBlock,
 	CoreParagraphBlock,
 	CoreQuoteBlock,
-	CoreHtmlBlock
+	CoreHtmlBlock,
+    CoreButtonBlock
 };

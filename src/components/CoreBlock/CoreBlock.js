@@ -8,6 +8,7 @@ import CoreListBlock from '../CoreListBlock/CoreListBlock';
 import CoreParagraphBlock from '../CoreParagraphBlock/CoreParagraphBlock';
 import CoreQuoteBlock from '../CoreQuoteBlock/CoreQuoteBlock';
 import CoreHtmlBlock from '../CoreHtmlBlock/CoreHtmlBlock';
+import CoreButtonBlock from '../CoreButtonBlock/CoreButtonBlock';
 
 const CoreBlock = props => {
 	const { __typename, attributes } = props.block;
@@ -34,6 +35,10 @@ const CoreBlock = props => {
 
 	if (__typename.endsWith('CoreListBlock')) {
 		return <CoreListBlock attributes={attributes} />;
+	}
+
+	if (__typename.endsWith('CoreButtonBlock')) {
+		return <CoreButtonBlock attributes={attributes} />;
 	}
 
 	if (__typename.endsWith('CoreParagraphBlock')) {
