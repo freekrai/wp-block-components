@@ -38,6 +38,17 @@ export default CoreButtonBlock;
 /*
 <div class="wp-block-button"><a class="wp-block-button__link" href="https://rogerstringer.com/contact/">Contact me about writing for you</a></div>
 
+     __typename
+      align
+      backgroundColor
+      className
+      customBackgroundColor
+      customTextColor
+      text 
+      textColor
+      title  
+      url
+
           url
           title
           textColor
